@@ -1,0 +1,12 @@
+Pessoa Fisica
+até 1500- isento
+de 1500 até 3500 - 2%
+de 3500 até 6000 - 3.5%
+acima de 6000 - 5%
+
+
+Pessoa Juridica
+até 3000 - 3%
+de 3000 até 6000 - 5%
+de 6000 até 10000 - 7%
+acima de 10000 - 9%
