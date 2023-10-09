@@ -66,6 +66,7 @@ public class Main {
                                 System.out.println("Este endereço é comercial? S/N:");
                                 String endCom = leitor.next();
 
+//                                if (endCom.equalsIgnoreCase("s")){
                                 if (endCom.equals("S") || endCom.equals("s")){
                                     novoEndPf.endComercial = true;
                                 } else {
