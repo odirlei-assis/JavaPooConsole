@@ -1,8 +1,12 @@
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class PessoaFisica extends Pessoa{
     public String cpf;
     public LocalDate dataNasc;
+
+    private ArrayList<PessoaFisica> listaPf = new ArrayList<PessoaFisica>();
 
     @Override
     public float CalcularImposto(float rendimento) {
@@ -24,5 +28,15 @@ public class PessoaFisica extends Pessoa{
             return rendimento * .05f;
         }
 
+    }
+
+    public void CadastrarPf(PessoaFisica pessoa){
+        listaPf.add(pessoa);
+
+        System.out.println("Cadastrado com sucesso!");
+    }
+
+    public ArrayList<PessoaFisica> ListarPessoasF(){
+        return  listaPf;
     }
 }

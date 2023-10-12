@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<PessoaFisica> listaPf = new ArrayList<>();
         PessoaFisica metodoPf = new PessoaFisica();
 
 
@@ -75,17 +74,15 @@ public class Main {
 
                                 novaPf.endereco = novoEndPf;
 
-                                listaPf.add(novaPf);
-
-                                System.out.println("Cadastro realizado com sucesso!");
+                                metodoPf.CadastrarPf(novaPf);
 
                                 break;
 
                             case "2":
 
-                                if (listaPf.size() > 0){
+                                if (metodoPf.ListarPessoasF().size() > 0){
 
-                                    for (PessoaFisica cadaPf : listaPf) {
+                                    for (PessoaFisica cadaPf : metodoPf.ListarPessoasF()) {
                                         System.out.println("Nome: " + cadaPf.nome);
                                         System.out.println("CPF: " + cadaPf.cpf);
                                         System.out.println("Data de Nascimento: " + cadaPf.dataNasc.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
